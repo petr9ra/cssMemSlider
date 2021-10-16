@@ -4,28 +4,45 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
   <title>Slider</title>
 </head>
 <body>
-  <div class="slider">
-    <ul class="slider__list">
-      <li class="slider__item img1"></li>
-      <li class="slider__item img2"></li>
-      <li class="slider__item img3"></li>
-      <li class="slider__item img4"></li>
+  <div class="wrapper">
+    <input type="radio" name="slides" id="dot1" checked>
+    <input type="radio" name="slides" id="dot2">
+    <input type="radio" name="slides" id="dot3">
+    <input type="radio" name="slides" id="dot4">
+    <ul class="slider">
+      <li class="slide slide1">
+        <img src="img/img1.jpg" alt="Slide 1">
+      </li>
+      <li class="slide slide2">
+        <img src="img/img2.jpg" alt="Slide 2">
+      </li>
+      <li class="slide slide3">
+        <img src="img/img3.jpg" alt="Slide 3">
+      </li>
+      <li class="slide slide4">
+        <img src="img/img4.jpg" alt="Slide 4">
+      </li>
     </ul>
-    <div class="slider__control">
-      <label for="dot1"></label>
-      <label for="dot2"></label>
-      <label for="dot3"></label>
-      <label for="dot4"></label>
+    <div class="text-wrap">
+      <div class="text text1">Text 1</div>
+      <div class="text text2">Text 2</div>
+      <div class="text text3">Text 3</div>
+      <div class="text text4">Text 4</div>
     </div>
-    <div class="slider__dots">
-      <input type="radio" name="slides" id="dot1" checked>
-      <input type="radio" name="slides" id="dot2">
-      <input type="radio" name="slides" id="dot3">
-      <input type="radio" name="slides" id="dot4">
+    <div class="control">
+      <label for="dot1"><span class="dot-inner"></span></label>
+      <label for="dot2"><span class="dot-inner"></span></label>
+      <label for="dot3"><span class="dot-inner"></span></label>
+      <label for="dot4"><span class="dot-inner"></span></label>
     </div>
+    
   </div>
 </body>
 </html>
