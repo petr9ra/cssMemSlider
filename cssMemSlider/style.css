@@ -1,10 +1,4 @@
-html {
-  /* width: calc(100vw - 30px);
-  height: 100vh; */
-}
 body {
-  /* width: 100%;
-  height: 100%; */
   font-family: 'Roboto', sans-serif;
   font-size: 18px;
 }
@@ -13,13 +7,13 @@ body {
   grid-template-columns: 2fr 1fr;
   justify-content: space-between;
   width: 90%;
-  /* max-width: 1440px; */
-  /* height: 100%; */
   margin: 30px auto 0;
 }
 .wrapper > input {
   display: none;
 }
+
+/* Стилизация и анимация картинок */
 .slider {
   grid-column: 1 / -1;
   width: 100%;
@@ -46,7 +40,6 @@ body {
   object-fit: contain;
   border-radius: 15px;
 }
-
 #dot1:checked ~ .slider > .slide1,
 #dot2:checked ~ .slider > .slide2, 
 #dot3:checked ~ .slider > .slide3,
@@ -57,6 +50,7 @@ body {
   transition: 0.3s ease-out;
 }
 
+/* Стилизация и анимация текста */
 .text-wrap {
   display: grid;
   overflow: hidden;
@@ -70,7 +64,6 @@ body {
   opacity: 0;
   position: relative;
   left: 100vw;
-
 }
 #dot1:checked ~ .text-wrap > .text1,
 #dot2:checked ~ .text-wrap > .text2,
@@ -82,6 +75,7 @@ body {
   transition: 0.3s ease-out;
 }
 
+/* Стилизаяция кнопок управления */
 .control {
   justify-self: end;
 }
@@ -115,6 +109,7 @@ label:active .dot-inner {
   background-color: rgb(230, 230, 230);
 }
 
+/* Мобильная версия */
 @media (max-width: 639px) {
   .wrapper {
     grid-template-columns: 1fr;
@@ -130,7 +125,5 @@ label:active .dot-inner {
   .dot-inner {
     width: 10px;
     height: 10px;
-  }
-  .text-wrap {
   }
 }
